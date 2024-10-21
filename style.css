@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Gui.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.welcome-container {
+    text-align: center; /* Centraliza o texto */
+}
+
+.welcome-title {
+    margin: 20px 0; /* Margem para separar do input */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #004080; /* Azul */
+    color: white; /* Texto branco */
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003366; /* Azul mais escuro */
+}
+
+/* Menu */
+.menu-container {
+    display: none; /* Escondido inicialmente */
+    background-color: #004080; /* Azul do menu */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-option {
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #0056b3; /* Azul para opções */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-option:hover {
+    background-color: #003366; /* Azul mais escuro ao passar o mouse */
+}
+
+.back-button {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #007BFF; /* Cor do botão voltar */
+}
+
+/* Contact Info */
+.contact-info {
+    display: none; /* Escondido inicialmente */
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalhes de contato */
+.contact-detail {
+    display: none; /* Escondido inicialmente */
+    background-color: #007bff; /* Azul claro */
+    color: white; /* Texto branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Alerta */
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Inicialmente escondido */
+    width: 300px; /* Tamanho igual aos outros alertas */
+    max-height: 400px; /* Máxima altura para evitar sobreposição */
+    overflow-y: auto; /* Rolagem se o conteúdo exceder a altura */
+}
+
+/* Chat */
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    overflow: hidden;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #004080; /* Azul */
+    color: white; /* Texto branco */
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.bot-message {
+    background-color: #0056b3; /* Azul para mensagens do bot */
+    color: white;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #007bff; /* Azul claro para mensagens do usuário */
+    color: white;
+    text-align: right;
+}
+
+input[type="text"]:focus {
+    border-color: #004080; /* Cor do contorno ao focar */
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        width: 90%; /* Aumenta a largura em telas menores */
+    }
+}

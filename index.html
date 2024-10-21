@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - LM IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container" id="welcomeContainer">
+        <h1 class="welcome-title">Bem-vindo Logger!</h1>
+        <label class="welcome-label" for="emailInput">Por favor, insira um email Loggi:</label>
+        <input type="text" id="emailInput" placeholder="seuemail@loggi.com">
+        <button id="enterBtn" class="button">Entrar</button>
+    </div>
+
+
+     
+    <div class="menu-container" id="menuContainer">
+        <h1>Bem-vindo ao Canal Last Mile!</h1>
+        <p>Selecione a opção que desejar.</p>
+        <div class="menu-option" id="option1">1. Contato Back Office</div>
+        <div class="menu-option" id="option2">2. Contato Last Mile TP</div>
+        <div class="menu-option" id="option3">3. Contato Coordenador Last Mile</div>
+        <div class="menu-option" id="option4">4. Ferramentas Last Mile</div>
+        <div class="menu-option" id="option5">5. Chat LM IA</div>
+    </div>
+
+    <div class="contact-info" id="contactInfo">
+        <div id="contactBackOffice" class="contact-detail" style="display: none;">
+            <h2>Contato Back Office:</h2>
+            <p>Arthur Sipriano<br>Email: <a href="mailto:arthur.sipriano@loggi.com">arthur.sipriano@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511955965913" target="_blank">Clique aqui</a></p>
+            <p>Guilherme Morais<br>Email: <a href="mailto:guilherme.pedroso@loggi.com">guilherme.pedroso@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511942315351" target="_blank">Clique aqui</a></p>
+            <p>Luís Antônio<br>Email: <a href="mailto:luis.antonio@loggi.com">luis.antonio@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511964757181" target="_blank">Clique aqui</a></p>
+        </div>
+        <div id="contactLastMileTP" class="contact-detail" style="display: none;">
+            <h2>Contato Last Mile TP:</h2>
+            <p>Iuri Lima<br>Email: <a href="mailto:iuri.lima@loggi.com">iuri.lima@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511988654605" target="_blank">Clique aqui</a></p>
+            <p>Larissa Fernandes<br>Email: <a href="mailto:larissa.fernandez@loggi.com">larissa.fernandez@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511911840676" target="_blank">Clique aqui</a></p>
+            <p>Leandro Duarte<br>Email: <a href="mailto:leandro.duarte@loggi.com">leandro.duarte@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511950663345" target="_blank">Clique aqui</a></p>
+            <p>Patrick Schneiders<br>Email: <a href="mailto:patrick.schneiders@loggi.com">patrick.schneiders@loggi.com</a><br>WhatsApp: <a href="https://wa.me/556182913105" target="_blank">Clique aqui</a></p>
+            <p>Thiago Souza<br>Email: <a href="mailto:thiagosouza.santos@loggi.com">thiagosouza.santos@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511995065012" target="_blank">Clique aqui</a></p>
+            <p>Wládia Silva<br>Email: <a href="mailto:wladia.oliveira@loggi.com">wladia.oliveira@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511972113491" target="_blank">Clique aqui</a></p>
+        </div>
+        <div id="contactCoordenador" class="contact-detail" style="display: none;">
+            <h2>Contato Coordenador Last Mile:</h2>
+            <p>Pedro Savagin<br>Email: <a href="mailto:pedro.savagin@loggi.com">pedro.savagin@loggi.com</a><br>WhatsApp: <a href="https://wa.me/5511989149453" target="_blank">Clique aqui</a></p>
+        </div>
+        <div id="toolsLastMile" class="contact-detail" style="display: none;">
+            <h2>Ferramentas:</h2>
+            <p>DLE - Data Limite de Expedição: <a href="https://dle-ops.data.loggi.com/" target="_blank">Clique aqui</a></p>
+            <p>[Amazon] Escoamento - Malha: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQw4a0cC_vpGKco47QzL36fsw1I140mzL4jpSnOA38BpfMr0ADgO5VO6bFswBD2_Y4t3csOB6d4JEZA/pubhtml" target="_blank">Clique aqui</a></p>
+            <p>[Boticário] Escoamento - Malha: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQ65KO-UyEga6sSUIyS3PCZAlpseZwUC6_GRPUapMXv8hVaEX7Z9RbHU9of9l4CyGuGROMjZ912kZo/pubhtml" target="_blank">Clique aqui</a></p>
+            <p>[Loggi] Escoamento - Malha: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vROMH2QkmBGwatwUpyBJtDGT7n99Rddy2OCaiIvkUeGOLYlVw_3dj453G_MVDDSzsZJyHs2iCS0jTf_/pubhtml#" target="_blank">Clique aqui</a></p>
+            <p>[Shein] Escoamento - Malha: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAOiA7297kdpmNMS19sKPTYLYP-TLYt4EnAj5VykxH98Dhczgo0R78CRdw30b49LU4J8iBFdrWTTiD/pubhtml" target="_blank">Clique aqui</a></p>
+            <p>KPI'S - Controle: <a href="https://lookerstudio.google.com/s/tyzgltoadsw" target="_blank">Clique aqui</a></p>
+            <p>PMC - Plano Mestre de Coletas: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCSeECjNgbbGwKhTZvMkt6pHidqnUX0w_2zlXdBNPLqVKvm70si2qv1l5e9dFS10OZ5x2Tdwf2wa34/pubhtml" target="_blank">Clique aqui</a></p>      
+            <p>PME - Plano Mestre de Expedição: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjFFY8TqwkDhA29iKf2QSxRPIbllq58qcPkTpMFxU25oPMUXZkli_kh_wLvp48mdb-LTWr1ZXVV_Fy/pubhtml" target="_blank">Clique aqui</a></p>
+
+        </div>
+        <button class="back-button" id="backToMenuBtn">Voltar ao Menu Principal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
